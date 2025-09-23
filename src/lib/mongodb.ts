@@ -18,7 +18,7 @@ async function dbConnect() {
       bufferCommands: false,
     };
 
-    cached.promise = mongoose.connect("mongodb://localhost:27017/encrypted-notes", opts).then((mongoose) => {
+    cached.promise = mongoose.connect("mongodb+srv://kumaramit28538_db_user:Yx87OfSIc3IDdoUk@cluster0.gduoicr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", opts).then((mongoose) => {
       return mongoose;
     });
   }
